@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    /* border: none; */
+}
+body{
+    background-image: url(../img/capabay.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* background-color: rgb(5, 5, 54); */
+    
+
+}
+
+.spinCont{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 10px solid grey;
+    border-radius: 50%;
+    border-top-color: white;
+    
+    animation: spin .8s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+   
+}
+
+
+.mainCont{
+    height: 450px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 34.4%;
+    text-align: center;
+    padding: 25px;
+    
+}
+
+.inputCont{
+    display: flex;
+    flex-direction: column;
+    
+}
+input, .result-btn{
+    height: 45px;
+    padding: 10px;
+    margin-top: 25px ;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(223, 215, 215, 0.603);
+}
+
+.result-btn{
+    background-color: rgb(5, 5, 54);
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+
+
+.displayMsg{
+    height: 150px;
+    width: 500px;
+    margin: 0 auto;
+    display: none;
+    /* background-color: yellow; */
+    padding: 30px;
+    text-align: center;
+    color: yellow;
+    animation: swipe .5s ease-in-out;
+
+}
+.wrapperCont{
+    height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+    /* border: 6px solid black; */
+    /* background-color: red; */
+}
+
+@keyframes swipe{
+    from{
+        transform: translateX(-100%);
+    }
+}
+@media only screen and (max-width: 2290px){
+    .wrapperCont{
+        width: 50%;
+    }
+    .mainCont{
+        left: 35%;
+        
+    }
+   
+}
+
+@media only screen and (max-width: 790px){
+    .wrapperCont{
+        width: 100%;
+    }
+    .mainCont{
+        left: 10%;
+        width: 80%;
+        
+    }
+   
+}
+
+@media only screen and (max-width: 520px){
+    .wrapperCont{
+        width: 100%;
+    }
+    .mainCont{
+        top: 22%;
+        left: 10%;
+        width: 80%;
+        
+    }
+    .displayMsg{
+        width: 100%;
+        padding: 5px;
+    }
+    body{
+        background-image: url(../img/four.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* background-color: rgb(5, 5, 54); */
+        
+    
+    }
+   
+}

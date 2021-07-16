@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript Assignment</title>
+    <link rel="stylesheet" href="css/assignmt.css">
 </head>
+
 <body>
-    
+    <!-- <div class="spinCont"></div> -->
+    <div class="wrapperCont">
+        <div class="displayMsg">
+            <h1 class="displayh3"></h1>
+        </div>
+
+        <div class="mainCont">
+            <h1>Check Your Result</h1>
+            <div class="inputCont">
+                <input type="text" name="name" placeholder="Enter Name" id="stdName" required>
+                <input type="number" name="score1" placeholder="Enter Score1" id="scr1" required>
+                <input type="number" name="score2" placeholder="Enter Score2" id="scr2" required>
+                <button class="result-btn" onclick="checkResult()">Check Result</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
 
 
 
 
     <script src="js/index.js"></script>
 </body>
+
 </html>
