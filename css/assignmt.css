@@ -147,5 +147,8 @@ input, .result-btn{
         
     
     }
-   
+}
+
+#getNum{
+    height: 50px;
 }
